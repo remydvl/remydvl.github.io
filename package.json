@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "pesonal project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remydvl/remydvl.github.io.git"
+  },
+  "author": "remydvl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remydvl/remydvl.github.io/issues"
+  },
+  "homepage": "https://github.com/remydvl/remydvl.github.io#readme"
+}
