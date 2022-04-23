@@ -1,9 +1,30 @@
 body
 {
-    @include fonts('Roboto', 48px);
+    @include fonts('Roboto', 36px);
 }
 
 h1
 {
     @include fonts('Shrikhand', 72px);
+}
+
+h4
+{
+    @include fonts('Shrikhand', 48px);
+}
+
+a:link
+{
+    @include linkColor(white);
+}
+
+a:visited
+{
+    @include linkColor(white);
+}
+
+li
+{
+    list-style: none;
+    margin-top: 20px;
 }

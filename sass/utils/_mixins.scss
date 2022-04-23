@@ -3,3 +3,9 @@
     font-family: $fontFamily, serif;
     font-size: $fontSize;
 }
+
+@mixin linkColor ($color)
+{
+    color: $color;
+    text-decoration: none;
+}
