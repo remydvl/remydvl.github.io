@@ -1,0 +1,21 @@
+body {
+  font-family: "Roboto", serif;
+  font-size: 48px;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 72px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0px 20px 0px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvYmFzZS9fYmFzZS5zY3NzIiwiLi4vLi4vLi4vc2Fzcy91dGlscy9fbWl4aW5zLnNjc3MiLCIuLi9zdHlsZS5jc3MiLCIuLi8uLi8uLi9zYXNzL2xheW91dHMvX2xheW91dHMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQ0VJLDRCQUFBO0VBQ0EsZUREeUI7QUVDN0I7O0FGRUE7RUNISSwrQkFBQTtFQUNBLGVESTRCO0FFQ2hDOztBQ1JBO0VBRUksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx3QkFBQTtNQUFBLHFCQUFBO1VBQUEsdUJBQUE7RUFDQSx5QkFBQTtBRFVKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

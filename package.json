@@ -4,7 +4,8 @@
   "description": "pesonal project",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/remydvl/remydvl.github.io/issues"
   },
-  "homepage": "https://github.com/remydvl/remydvl.github.io#readme"
+  "homepage": "https://github.com/remydvl/remydvl.github.io#readme",
+  "browserslist": "last 4 versions"
 }
