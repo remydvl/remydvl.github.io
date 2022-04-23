@@ -1,0 +1,17 @@
+body {
+  font-family: "Roboto", serif;
+  font-size: 48px;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 72px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

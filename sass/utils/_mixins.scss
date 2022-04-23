@@ -1,0 +1,5 @@
+@mixin fonts ($fontFamily, $fontSize)
+{
+    font-family: $fontFamily, serif;
+    font-size: $fontSize;
+}
