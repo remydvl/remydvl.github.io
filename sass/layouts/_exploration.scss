@@ -6,7 +6,7 @@
     background-color: #f6f6f6;        
     text-align: center;
 
-    .exploration__text
+    &__text
     {
         p:first-child
         {
@@ -14,7 +14,7 @@
         }
     }
 
-    .exploration__header
+    &__header
     {        
         display: flex;
         align-items: center;
