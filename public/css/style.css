@@ -67,7 +67,7 @@ footer, h4 {
   background-color: #f6f6f6;
   text-align: center;
 }
-.exploration__text p:first-child {
+.exploration__text p:first-of-type {
   font-weight: bold;
 }
 .exploration__header {
@@ -131,6 +131,44 @@ footer, h4 {
 .steps__step i {
   margin: 0px 50px 0px 35px;
   color: #7d7d7d;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.restaurants__restaurant {
+  background-color: white;
+  width: 80%;
+  height: 625px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+.restaurants__restaurant i {
+  position: relative;
+  top: -110px;
+  right: -675px;
+  font-size: 50px;
+}
+.restaurants__restaurant p {
+  margin: 25px;
+}
+.restaurants__restaurant p:first-of-type {
+  font-weight: bold;
+}
+.restaurants__restaurant img {
+  width: 100%;
+  height: 450px;
+  border-radius: 50px 50px 0px 0px;
+}
+.restaurants__restaurant--start {
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 42px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
