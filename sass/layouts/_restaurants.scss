@@ -14,12 +14,30 @@
         border-radius: 50px;
         margin-bottom: 50px;
 
-        i
+        .far
         {
             position: relative;
             top: -110px;
             right: -675px;
             font-size: 50px;
+            opacity: 1;
+            transition: opacity 0.2s ease-in;
+        }
+
+        .fas
+        {
+            position: relative;
+            top: -110px;
+            right: -615px;
+            font-size: 50px;
+            opacity: 0;
+
+            &:hover
+            {
+                opacity: 1;
+                color: map-get($colors, 'primary');
+                transition: opacity 0.2s ease-in;
+            }
         }
 
         p
