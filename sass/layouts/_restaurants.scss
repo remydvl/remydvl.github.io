@@ -78,3 +78,23 @@
         }
     }
 }
+
+@media (min-width: 480px)
+{
+    .restaurants
+    {
+        flex-direction: row;
+        max-width: 1920px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &__restaurant
+        {
+            width: 800px;
+            &:nth-child(1)
+            {
+                width: 1920px;
+            }
+        }
+    }
+}
