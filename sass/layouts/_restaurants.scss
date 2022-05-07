@@ -8,17 +8,29 @@
 
     &__restaurant
     {
+        position: relative;
         background-color: white;
         width: 80%;
         height: 625px;
         border-radius: 50px;
         margin-bottom: 50px;
 
+        .new
+        {
+            position: absolute;
+            top: 45px;
+            right: 60px;
+            background-color: hsl(165deg 56% 74%);
+            color: hsl(166deg 87% 29%);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
         .far
         {
-            position: relative;
-            top: -110px;
-            right: -675px;
+            position: absolute;
+            bottom: 65px;
+            right: 60px;
             font-size: 50px;
             opacity: 1;
             transition: opacity 0.2s ease-in;
@@ -26,9 +38,9 @@
 
         .fas
         {
-            position: relative;
-            top: -110px;
-            right: -615px;
+            position: absolute;
+            bottom: 65px;
+            right: 60px;
             font-size: 50px;
             opacity: 0;
 
