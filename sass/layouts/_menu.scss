@@ -14,10 +14,43 @@
     flex-direction: column;
     background-color: #f6f6f6;
     align-items: center;
-    padding-bottom: 400px;
+    padding-bottom: 100px;
     border-radius: 80px 80px 0px 0px;
     position: relative;
     bottom: 90px;
+
+    &__title
+    {
+        font-family: "Shrikhand";
+        font-size: 64px;
+        margin-right: 400px;
+    }
+    
+    .far
+    {
+        position: absolute;
+        bottom: 2825px;
+        right: 60px;
+        font-size: 50px;
+        opacity: 1;
+        transition: opacity 0.2s ease-in;
+    }
+
+    .fas
+    {
+        position: absolute;
+        bottom: 2825px;
+        right: 60px;
+        font-size: 50px;
+        opacity: 0;
+
+        &:hover
+        {
+            opacity: 1;
+            color: map-get($colors, 'primary');
+            transition: opacity 0.2s ease-in;
+        }
+    }
 
     &__dishes
     {
@@ -58,6 +91,32 @@
         {
             font-weight: bold;
             font-size: 38px;
+        }
+
+        .btn
+        {
+            margin-top: 100px;
+            height: 120px;
+            width: 500px;
+            font-size: 42px;
+            border-radius: 75px;
+        }
+    }
+}
+
+@media (min-width: 480px)
+{
+    .menu
+    {
+        &__dishes
+        {
+            &__dishe
+            {
+                &:hover
+                {
+                    // tout dout le rideaux avec le V
+                }
+            }
         }
     }
 }
