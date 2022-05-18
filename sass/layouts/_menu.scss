@@ -18,19 +18,21 @@
     border-radius: 80px 80px 0px 0px;
     position: relative;
     bottom: 90px;
+    z-index: 3;
 
     &__title
     {
         font-family: "Shrikhand";
         font-size: 64px;
-        margin-right: 400px;
+        margin-right: 335px;
+        margin-left: 20px;
     }
     
     .far
     {
         position: absolute;
-        bottom: 2825px;
-        right: 60px;
+        right: 270px;
+        top: 85px;
         font-size: 50px;
         opacity: 1;
         transition: opacity 0.2s ease-in;
@@ -39,8 +41,8 @@
     .fas
     {
         position: absolute;
-        bottom: 2825px;
-        right: 60px;
+        right: 270px;
+        top: 85px;
         font-size: 50px;
         opacity: 0;
 
@@ -57,7 +59,28 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        gap: 10px;
+        
+        .container-dish
+        {
+            display: flex;
+            width: 875px;
+            overflow: hidden;
+            position: relative;
 
+            &:hover
+            {
+                .menu__dishes__dish--check
+                {
+                    right: 0;
+                }
+                .price
+                {
+                    text-indent: 70%;
+                }
+            }
+        }
+        
         &__dish
         {
             display: flex;
@@ -66,25 +89,57 @@
             background-color: white;
             padding: 20px 0px 20px 20px;
             border-radius: 50px;
-            width: 175%;
+            width: 100%;
             height: 135px;
+            position: relative;
+            z-index: 1;
+            margin: 0;
             
+            &--check
+            {
+                background-color: map-get($map: $colors, $key: tertiary);
+                width: 145px;
+                height: 135px;
+                padding: 20px 0px 20px 20px;
+                border-radius: 0px 50px 50px 0px;
+                position: absolute;
+                right: -165px;
+                z-index: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                transition: 0.6s;
+
+                img
+                {
+                    height: 50px;
+                }
+
+            }
+
+            &:hover + &--check img
+            {
+                transition: transform 0.4s ease-in-out;
+                transition-delay: 0.15s;
+                transform: rotate(-360deg);
+            }
+
             &--start
             {
                 background-color: transparent;
                 justify-content: flex-end;
                 font-size: 38px;
+                position: relative;
+                left: 25px;
+                text-decoration: underline 7.5px map-get($map: $colors, $key: tertiary);
             }
-        }
-
-        p
-        {
-            margin: 10px;
         }
 
         .price
         {
             text-indent: 90%;
+            transition: 0.6s;
         }
 
         .bold
@@ -100,23 +155,6 @@
             width: 500px;
             font-size: 42px;
             border-radius: 75px;
-        }
-    }
-}
-
-@media (min-width: 480px)
-{
-    .menu
-    {
-        &__dishes
-        {
-            &__dishe
-            {
-                &:hover
-                {
-                    // tout dout le rideaux avec le V
-                }
-            }
         }
     }
 }

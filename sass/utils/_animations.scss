@@ -1,0 +1,70 @@
+@keyframes fade-out
+{
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotate
+{
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes check
+{
+    from {
+        visibility: hidden;
+    }
+    
+    10% {
+        right: 5px;
+    }
+
+    20% {
+        right: 10px;
+    }
+
+    30% {
+        right: 15px;
+    }
+
+    40% {
+        right: 20px;
+    }
+
+    50% {
+        right: 25px;
+    }
+
+    60% {
+        right: 30px;
+    }
+
+    70% {
+        right: 35px;
+    }
+
+    80% {
+        right: 40px;
+    }
+
+    90% {
+        right: 45px;
+    }
+
+    to {
+        visibility: visible;
+        right: 50px;
+    }
+}
