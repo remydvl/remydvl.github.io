@@ -47,7 +47,7 @@
             &:hover
             {
                 opacity: 1;
-                color: linear-gradient(180deg, map-get($colors, 'secondary'), map-get($colors, 'primary'));
+                color: map-get($colors, 'primary');
                 transition: opacity 0.2s ease-in;
             }
         }
