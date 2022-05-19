@@ -278,6 +278,26 @@ footer, h4 {
   flex-direction: column;
   gap: 10px;
 }
+.menu__dishes.entree {
+  opacity: 0;
+  animation: transition 0.5s linear 0.5s forwards;
+}
+.menu__dishes.plat {
+  opacity: 0;
+  animation: transition 1s linear 1s forwards;
+}
+.menu__dishes.dessert {
+  opacity: 0;
+  animation: transition 1.5s linear 1.5s forwards;
+}
+@keyframes transition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menu__dishes .container-dish {
   display: flex;
   width: 875px;
